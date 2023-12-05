@@ -28,17 +28,24 @@ html {
     box-sizing: inherit;
 }
 
+
 body {
-    margin: 0;
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: var(--bg-body);
-    color: var(--text1);
-   /* line-height: var(--fs-18); */
-    font-size: var(--fs-18);
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text1);
+  /* line-height: var(--fs-18); */
+  font-size: var(--fs-18);
 }
 
-a:hover{
-    color: var(--accent);
+.header__social {
+  display: inline-block;
+}
+
+.header__social:hover > svg > path,
+a:hover {
+  color: var(--accent);
+  transition: fill var(--transition), color var(--transition);
 }
 
 svg path:hover {
@@ -58,9 +65,15 @@ svg path:hover {
     }
   }
 
-  /* Header */
+  /* HEADER */
   .header {
 
+  }
+  .header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
   .header__home{
@@ -68,4 +81,16 @@ svg path:hover {
     font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
     color: var(--text1);
     text-decoration: none;
+    flex: 1 0 100%;
   }
+
+  .visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  
