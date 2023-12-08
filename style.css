@@ -2,7 +2,7 @@
 :root {
     --bg-body: hsl(0, 0%, 8%);
     --bg-body2: hsl(0, 0%, 14%);
-    --accent: hsl(62, 71%, 59%);
+    --accent: hsl(183, 100%, 57%);
     --text1: hsl(0, 0%, 100%);
     --text2: hsl(0, 0%, 85%);
     --invalid: hsl(7, 100%, 68%);
@@ -187,6 +187,7 @@ svg path:hover {
     background-repeat: repeat-x;
     background-size: 8px 4px;
   }
+  
   .hero__text{
     position: relative;
     text-align: center;
