@@ -69,21 +69,38 @@
 
   <main id="main">
     <section class="hero">  
-      <div class="wrapper">
-        <img src="/assets/images/image-profile-mobile.webp" alt="picture of Ifoghale Uzezi"
-          srcset="
-          /assets/images/image-profile-mobile.webp 348w,
-          /assets/images/image-profile-tablet.webp 646w,
-          /assets/images/image-profile-desktop.webp 890w,
-          "
-          sizes="(max-width: 599.98px) 46.4vw, (max-width: 999.88px) 42vw, 445px" 
-        >
-          <h1>
-              Nice to meet you! I'm Ifoghale Uzezi.
+      <div class="wrapper hero__wrapper">
+        <picture>
+          <source
+            media="(min-width: 62.5em)"
+            srcset="/assets/images/image-profile-desktop.webp"
+          />
+          <source
+            media="(min-width: 37.5em)"
+            srcset="/assets/images/image-profile-tablet.webp"
+          />
+          <img
+            class="hero__image"
+            src="/assets/images/image-profile-mobile.webp"
+            alt="picture of Adam Keyes"
+            width-="174"
+            height="383"
+          />
+        </picture>
+
+        <div class="hero__text">
+          <h1 class="hero__headline">
+              Nice to meet you! I'm <span>Ifoghale Uzezi</span>.
           </h1>
+          <p class="hero__description">
+            A passionate front-end developer based in Nigeria. I thrive on crafting captivating and functional web solutions.
+          </p>
+          <a href="" class="hero__contact underline">Contact Me</a>
+        </div>
       </div>
     </section>
-
+    My fascination lies in creating digital experiences that seamlessly blend beauty with practicality, ensuring that the websites I design are not only visually appealing but also intuitive and valuable to users. I take pride in my ability to bring ideas to life through code, dedicated to building web solutions that people love to engage with. Welcome to my portfolio, where creativity meets functionality!
+    
     <section id="portfolio">
       <h2>Portfolio</h2>
       <div>
