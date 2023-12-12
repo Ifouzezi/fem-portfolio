@@ -112,6 +112,7 @@ svg path:hover {
   margin-top: 20px;
 }
 .header__nav{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -150,12 +151,14 @@ svg path:hover {
     .header__nav {
       align-items: center;
       gap: 32px;
+      margin-bottom: 90px;
     }
   
     .header__home {
       flex: 1; /* Occupy remaining space */
       text-align: left; /* Align text to the left within the container */
     }
+
   }
 
   /* HERO */
@@ -174,9 +177,23 @@ svg path:hover {
     display: block;
     margin-inline: auto;
     top: 0;
-    z-index: 2;
 
   }
+
+  .hero__rings {
+    position: absolute;
+    right: 50%;
+    top: 130px;
+    z-index: -1;
+  }
+
+  .hero__circle {
+    position: absolute;
+    top: 254px;
+    right: 0;
+    translate: 50%;
+  }
+
   h1 > span {
     background-image: linear-gradient(
     to right,
@@ -193,6 +210,10 @@ svg path:hover {
     text-align: center;
     margin-top: 335px;
   }
+
+  .hero__headline > br {
+    display: none;
+  }
   
   .hero__description {
     
@@ -200,4 +221,30 @@ svg path:hover {
 
   .hero__contact {
 
+  }
+
+  @media (min-width: 37.5em) {
+    .hero__image{
+      width: 20.125rem;
+      height: auto;
+      left: auto;
+      right: 0;
+      translate: 0%;
+    }
+
+    .hero__text {
+      width: 63vw;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    .hero__headline > br {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: 62.5em) {
+    .hero__headline > br {
+      display: none;
+    }
   }
