@@ -152,13 +152,18 @@ svg path:hover {
 
   }
 
+  @media (min-width: 62.5em) {
+    .header__nav {margin-right: 30px;
+    }
+  }
+
   /* HERO */
   .hero{
     
   }
   .hero__wrapper{
     padding-bottom: 80px;
-    /*border-bottom: 1px solid var(--text2);*/
+    border-bottom: 1px solid var(--text2);
   }
 
   .hero__image {
@@ -278,7 +283,14 @@ svg path:hover {
 
     .hero__image {
       margin-block-start: -154px;
+      width: 445px;
     }
+
+    .hero__rings {
+      top: 0px;
+      translate: -50% -50%;
+    }
+
     .hero__headline {
       margin-bottom: 43px;
     }
@@ -288,6 +300,7 @@ svg path:hover {
     }
 
     .hero__description {
-      margin-bottom: 66px;
+      width: 38ch;
+      margin-block-end: 66px;
     }
   }
