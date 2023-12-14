@@ -158,19 +158,16 @@ svg path:hover {
   }
   .hero__wrapper{
     padding-bottom: 80px;
-    border-bottom: 1px solid var(--text2);
+    /*border-bottom: 1px solid var(--text2);*/
   }
 
   .hero__image {
     position: absolute;
+    top: 0;
     left: 50%;
     translate: -50%;
-    display: block;
-    margin-inline: auto;
-    top: 0;
     width: 174px;
     height: auto;
-
   }
 
   .hero__rings {
@@ -178,6 +175,7 @@ svg path:hover {
     right: 50%;
     top: 130px;
     z-index: -1;
+    height: auto;
   }
   /*
   .hero__circle {
