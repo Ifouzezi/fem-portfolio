@@ -222,6 +222,18 @@ svg path:hover {
     .hero__wrapper{
       padding-bottom: 60px;
     }
+
+    .hero__content {
+      display: flex;
+      overflow-x: hidden;
+      align-items: flex-end;
+    }
+
+    .hero__content picture {
+      order: 2;
+      margin-left: -100px;
+    }
+
     .hero__image{
       width: 20.125rem;
       height: auto;
@@ -237,6 +249,7 @@ svg path:hover {
       width: 63vw;
       text-align: left;
       margin-top: 0;
+      z-index: 1;
     }
 
     .hero__headline {
@@ -253,11 +266,21 @@ svg path:hover {
   }
 
   @media (min-width: 62.5em) {
-
+    .hero{
+      margin-top: 0px;
+    }
     .hero__wrapper{
       position: relative;
+      padding-bottom: 100px;
     }
 
+    .hero__content {
+      align-items: flex-start;
+    }
+
+    .hero__image {
+      margin-block-start: -154px;
+    }
     .hero__headline {
       margin-bottom: 43px;
     }
