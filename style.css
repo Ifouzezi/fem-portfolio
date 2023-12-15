@@ -24,9 +24,7 @@ html {
     font-size: 100%;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
+
 
 body {
   margin: 0;
