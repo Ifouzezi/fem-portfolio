@@ -20,8 +20,8 @@
   }
 
 html {
-    box-sizing: border-box;
-    font-size: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
 *,
@@ -30,8 +30,8 @@ html {
   box-sizing: inherit;
 }
 
-#main{
-  overflow:hidden;
+#page{
+  overflow: hidden;
 }
 
 body {
@@ -39,7 +39,6 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   background-color: var(--bg-body);
   color: var(--text1);
-  /* line-height: var(--fs-18); */
   font-size: var(--fs-18);
   padding-bottom: 30rem;
 }
