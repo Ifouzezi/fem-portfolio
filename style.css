@@ -24,7 +24,9 @@ html {
     font-size: 100%;
 }
 
-
+#main{
+  overflow:hidden;
+}
 
 body {
   margin: 0;
