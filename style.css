@@ -24,6 +24,12 @@ html {
     font-size: 100%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 #main{
   overflow:hidden;
 }
