@@ -30,7 +30,7 @@ html {
   box-sizing: inherit;
 }
 
-#page{
+#main{
   overflow: hidden;
 }
 
@@ -278,6 +278,10 @@ svg path:hover {
   }
 
   @media (min-width: 62.5em) {
+    #main{
+      overflow: visible;
+    }
+
     .hero{
       margin-top: 0px;
     }
