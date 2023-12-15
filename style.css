@@ -30,6 +30,13 @@ html {
   box-sizing: inherit;
 }
 
+body,
+input,
+textarea,
+button {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 #main{
   overflow: hidden;
 }
