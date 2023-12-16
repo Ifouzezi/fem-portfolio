@@ -104,7 +104,7 @@
           /> -->
   
           <div class="hero__text">
-            <h1 class="hero__headline">
+            <h1 class="hero__headline header-xl">
                 Nice to<br>
                 meet you! I'm <span>Ifoghale Uzezi</span>.
             </h1>
@@ -166,17 +166,38 @@
         />
     </section>
     
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div>
-        <h3>Project 1</h3>
-        <p>Description of project 1...</p>
+    <section class="projects">
+      <div class="wrapper projects__wrapper">
+        <div class="projects__grid">
+          <h2 class="projects__headline header-xl">Projects</h2>
+
+          <div class="projects__item">
+            <picture class="projects__picture">
+              <source
+              media="(min-width: 62.5em)"
+              srcset="/assets/images/thumbnail-project-1-large.webp"
+            />
+            <img
+              class="projects__image"
+              src="/assets/images/thumbnail-project-1-small.webp"
+              alt="thumbnails of dark/light Dashboard"
+              width-="343"
+              height="253"
+            />
+            </picture>
+            <h3 class="projects__name">Light/Dark Dashboard</h3>
+            <p class="projects__tags">
+              <span>HTML</span>
+              <span>SASS</span>
+              <span>JavaScript</span>
+            </p>
+            <div class="projects__links">
+              <a href="" class="underline">View Project</a>
+              <a href="" class="underline">View Code</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3>Project 2</h3>
-        <p>Description of project 2...</p>
-      </div>
-      <!-- Add more project sections as needed -->
     </section>
 
     <section id="contact">

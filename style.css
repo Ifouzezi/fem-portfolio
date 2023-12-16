@@ -54,7 +54,7 @@ h1, h2, h3, p {
   margin-top: 0;
 }
 
-h1 {
+.header-xl {
   font-size: 2.1875rem;
   font-size: clamp(2.19rem, 0.2rem + 8.48vw, 5.5rem);
 }
@@ -329,7 +329,6 @@ svg path:hover {
   
     .skills {
       position: relative;
-      overflow: hidden;
     }
 
     .skills__wrapper {
@@ -356,7 +355,7 @@ svg path:hover {
 
     .skills__rings {
       position: absolute;
-      bottom: 68px;
+      bottom: -20px;
       left: 50%;
       translate: 0 50%;
       z-index: -1;
@@ -391,3 +390,62 @@ svg path:hover {
         left: 100%;
       }
     }
+
+/* PROJECTS */
+
+ .projects {
+
+ }
+
+.projects__wrapper {
+  padding-block: 80px;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.projects__headline {
+  margin-block-end: 0;
+  
+}
+
+.projects__item {
+  grid-column: 1/ span 2;
+}
+
+.projects__picture {
+  display: block;
+  margin-block-end: 20px;
+}
+
+.projects__image {
+  width: 100%;
+  height: auto;
+}
+
+.projects__name {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-block-end: 7px;
+}
+
+.projects__tags {
+  display: flex;
+  justify-content: left;
+  gap: 12px;
+  margin-block-end: 20px;
+  text-transform: uppercase;
+}
+
+.projects__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
