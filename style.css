@@ -355,7 +355,7 @@ svg path:hover {
 
     .skills__rings {
       position: absolute;
-      bottom: -20px;
+      bottom: -154px;
       left: 50%;
       translate: 0 50%;
       z-index: -1;
@@ -379,6 +379,11 @@ svg path:hover {
     }
 
     @media (min-width: 62.5em) {
+
+      .skills{
+        overflow: hidden;
+      }
+
       .skills__wrapper {
         grid-template-columns: repeat(3, 1fr);
         gap: 58px 30px;
@@ -388,6 +393,7 @@ svg path:hover {
       .skills__rings {
         translate: -40% 50%;
         left: 100%;
+        margin-bottom: 235px;
       }
     }
 
