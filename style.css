@@ -76,6 +76,11 @@ a:hover {
   transition: fill var(--transition), color var(--transition);
 }
 
+a:focus-visible {
+  outline: 2px dashed var(--accent);
+  outline-offset: 2px;
+}
+
 .underline {
   display: inline-block;
   padding-bottom: 0.625rem;
@@ -481,7 +486,7 @@ svg path:hover {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-  .projects__image {
+  .projects__image picture {
     width: 100%;
     height: auto;
    
@@ -497,21 +502,125 @@ svg path:hover {
     content: '';
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 98.8%;
     top: 0;
     background-color: hsl(0, 0%, 0%);
-    opacity: 0.5;
+    opacity: 0;
     transition: opacity 150ms ease-in-out;
     right: 0;
   }
 
+  .projects__item:hover .projects__picture::after {
+    opacity: 0.5;
+  }
+  .projects__item:hover .projects__links {
+    opacity: 1;
+  }
+  
+  .projects__item:focus-within .projects__links {
+    opacity: 1;
+  }
+
+  .projects__item:focus-within .projects__picture::after {
+    opacity: 0.5;
+  }
 
   .projects__links {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     justify-self: center;
+    opacity: 0;
   }
   .projects__tags {
     margin-block-end: 0;
   }
+}
+
+/* CONTACT */
+
+.contact {
+  position: relative;
+}
+
+.contact__wrapper {
+  padding-block: 84px;
+}
+
+.contact__text {
+  text-align: center;
+}
+
+.contact__headline {
+  margin-block-end: var(--fs-20);
+}
+
+.contact__control {
+  position: relative;
+  margin-block-end: 16px;
+}
+
+.contact__control input,
+.contact__control textarea {
+  width: 100%;
+  padding-block: 16px;
+  padding-inline: 24px;
+  border: none;
+  border-bottom: 1px solid var(--text1);
+  background: transparent;
+  font-size: 1rem;
+  line-height: 1.625;
+  color: var(--text1);
+}
+
+.contact__control input:focus-visible,
+.contact__control textarea:focus-visible {
+  outline: none;
+  outline-offset: 1px;
+  border-bottom-color: var(--accent); 
+}
+
+.contact__control input:invalid,
+.contact__control textarea:invalid {
+  outline-color: 1px solid var(--text1);
+}
+
+.contact__control ::placeholder {
+  color: var(--text1);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.contact__control.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact__control textarea {
+  margin-block-end: 32px;
+}
+
+.contact__control button {
+  background-color: transparent;
+  border: none;
+}
+
+.contact__invalid-icon {
+  display: none;
+  width: var(--fs-24);
+  height: var(--fs-24);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  translate: -50% -50%;
+}
+
+.contact input:focus-visible:invalid ~ .contact__invalid-icon,
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+  display: inline-block;
+}
+
+.contact textarea:focus-visible:invalid ~ .contact__invalid-icon {
+  top: 1.2rem;
+  right: 1.5rem;
+  translate: none;
 }
