@@ -47,7 +47,10 @@ body {
   background-color: var(--bg-body);
   color: var(--text1);
   font-size: var(--fs-18);
-  padding-bottom: 30rem;
+}
+
+.bg-less-dark {
+  background-color: var(--bg-body2);
 }
 
 h1, h2, h3, p {
@@ -548,10 +551,17 @@ svg path:hover {
 
 .contact__text {
   text-align: center;
+  max-width: 27.8rem;
+  margin-inline: auto;
 }
 
 .contact__headline {
   margin-block-end: var(--fs-20);
+}
+
+.contact__form{
+  max-width: 27.8rem;
+  margin-inline: auto;
 }
 
 .contact__control {
@@ -623,4 +633,54 @@ svg path:hover {
   top: 1.2rem;
   right: 1.5rem;
   translate: none;
+}
+
+.contact__rings {
+  position: absolute;
+  left: 0;
+  bottom: 97px;
+  translate: -75%;
+}
+
+@media (min-width: 37.5em) {
+  .contact__rings {
+    bottom: 47px;
+    translate: -75%;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 27.8rem);
+    justify-content: space-between;
+  }
+
+  .contact__headline {
+    margin-block-end: var(--fs-36);
+  }
+
+  .contact__rings {
+    translate: -40%;
+  }
+}
+
+footer {
+  padding-block: 40px 40px;
+}
+
+@media (min-width: 37.5em) {
+  footer {
+    padding-block: 30px;
+  }
+
+  .header__nav{
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 62.5em) {
+  footer {
+    padding-block: 47px 92px;
+  }
 }
